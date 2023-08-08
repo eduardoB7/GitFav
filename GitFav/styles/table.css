@@ -1,0 +1,78 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#Container-table {
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-height: 52rem;
+  overflow-x: scroll;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-style: normal;
+}
+
+table thead {
+  text-align: left;
+  background-color: var(--thead-BgColor);
+}
+
+thead tr th {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+table thead #users {
+  width: 50.4rem;
+}
+
+table thead #repos,
+#followers {
+  width: 21.8rem;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+#action {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+tbody tr {
+  background-color: var(--imparRom-BgColor);
+}
+
+tbody tr .user {
+  display: flex;
+  align-items: center;
+}
+
+tbody tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+tbody tr img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.toRemove {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--buttonToremove-Color);
+}
