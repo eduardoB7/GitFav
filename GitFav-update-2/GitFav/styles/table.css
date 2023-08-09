@@ -1,0 +1,107 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#Container-table {
+  border-radius: 0.8rem;
+  overflow: auto;
+  max-height: 68.8rem;
+  background-color: var(--input-BgColor);
+}
+
+#Container-table::-webkit-scrollbar {
+  width: 6px; /* Largura da barra de rolagem */
+  background-color: transparent; /* Cor do polegar da barra de rolagem */
+}
+
+#Container-table::-webkit-scrollbar-thumb {
+  width: 6px; /* Largura da barra de rolagem */
+  background-color: var(--scrollBar-Color);
+  border-radius: 1rem;
+}
+
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+table * {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-style: normal;
+}
+
+table thead {
+  background-color: var(--thead-BgColor);
+}
+
+thead tr th {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+table thead #users {
+  width: 50.4rem;
+}
+
+table thead #repos,
+#followers {
+  width: 21.8rem;
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+#action {
+  padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--imparRom-BgColor);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--parRom-BgColor);
+}
+
+tbody tr .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.user a p {
+  font-weight: 700;
+}
+
+.user span {
+  color: var(--login-FontColor);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+tbody tr td {
+  padding: 2.4rem 2.4rem 2.4rem 4rem;
+}
+
+tbody tr img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.toRemove {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--buttonToremove-Color);
+}
